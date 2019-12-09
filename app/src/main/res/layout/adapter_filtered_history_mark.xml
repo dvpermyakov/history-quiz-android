@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/filteredCardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="@dimen/cardview_margin"
+    android:layout_marginRight="@dimen/cardview_margin"
+    android:layout_marginTop="@dimen/cardview_margin_with_text"
+    android:layout_marginBottom="@dimen/cardview_margin_with_text"
+    android:focusable="true"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    card_view:cardCornerRadius="@dimen/cardview_radius"
+    android:elevation="@dimen/cardview_elevation"
+    card_view:cardBackgroundColor="@color/colorCardViewBackground" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/filteredImage"
+            android:layout_width="@dimen/cv_history_mark_height"
+            android:layout_height="@dimen/cv_history_mark_height"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/filteredImage"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/cv_history_mark_text_padding_left"
+            android:layout_marginRight="@dimen/cv_history_mark_text_padding_right"
+            android:layout_marginTop="@dimen/cv_history_mark_text_padding_v"
+            android:layout_marginBottom="@dimen/cv_history_mark_text_padding_v">
+
+            <TextView
+                android:id="@+id/filteredName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_middle"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/filteredYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_extra_small" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/filteredDignities"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

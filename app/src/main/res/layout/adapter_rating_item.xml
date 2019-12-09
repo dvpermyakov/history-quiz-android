@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/userPosition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/test_ending_title_padding_left"
+        android:layout_marginBottom="@dimen/rating_title_padding_bottom"
+        android:textSize="@dimen/text_large"
+        android:textColor="@color/colorBlack" />
+
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/eventCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/cardview_margin"
+        android:layout_marginRight="@dimen/cardview_margin"
+        android:layout_marginBottom="@dimen/rating_title_padding_top"
+        android:focusable="false"
+        android:clickable="false"
+        android:foreground="?android:attr/selectableItemBackground"
+        card_view:cardCornerRadius="@dimen/cardview_radius"
+        android:elevation="@dimen/cardview_elevation"
+        card_view:cardBackgroundColor="@color/colorCardViewBackground" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RelativeLayout
+                android:id="@+id/userImageContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="7dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_vertical" >
+
+                <ImageView
+                    android:id="@+id/userImage"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:scaleType="centerCrop" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/userImageContainer"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/cv_history_mark_text_padding_left"
+                android:layout_marginRight="@dimen/cv_history_mark_text_padding_right"
+                android:layout_marginTop="@dimen/cv_history_mark_text_padding_v"
+                android:layout_marginBottom="@dimen/cv_history_mark_text_padding_v">
+
+                <TextView
+                    android:id="@+id/userName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_middle"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:id="@+id/userDoneAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_extra_small" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

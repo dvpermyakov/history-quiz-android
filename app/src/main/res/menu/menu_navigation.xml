@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/periods"
+            android:title="@string/menu_navigation_periods"
+            android:icon="@drawable/ic_list"/>
+        <item
+            android:id="@+id/news"
+            android:title="@string/menu_navigation_new"
+            android:icon="@drawable/ic_fiber_new"/>
+        <item
+            android:id="@+id/opened"
+            android:title="@string/menu_navigation_opened"
+            android:icon="@drawable/ic_lock_open"/>
+        <item
+            android:id="@+id/done"
+            android:title="@string/menu_navigation_done"
+            android:icon="@drawable/ic_check_circle"/>
+        <item
+            android:id="@+id/rating"
+            android:title="@string/menu_navigation_rating"
+            android:icon="@mipmap/ic_podium"/>
+        <item
+            android:id="@+id/achievement"
+            android:title="@string/menu_navigation_achievement"
+            android:icon="@mipmap/ic_achievement"/>
+        <item
+            android:id="@+id/balance"
+            android:title="@string/menu_navigation_balance"
+            android:icon="@mipmap/ic_coins"/>
+        <item
+            android:id="@+id/rate"
+            android:title="@string/menu_navigation_rate"
+            android:icon="@drawable/ic_grade"/>
+        <item
+            android:id="@+id/instructions"
+            android:title="@string/menu_navigation_instructions"
+            android:icon="@drawable/ic_help"/>
+    </group>
+</menu>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">История России: Игра</string>
+    <string name="default_scheme">app.default</string>
+    <string name="opened_scheme">app.opened</string>
+</resources>

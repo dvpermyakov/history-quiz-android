@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorPrimaryLight">#919CD9</color>
+
+    <color name="colorAccent">#DADEF2</color>
+    <color name="colorCardViewBackground">#FFFFFF</color>
+
+    <color name="colorRightAnswer">#67D75B</color>
+    <color name="colorWrongAnswer">#D75B5B</color>
+
+    <color name="colorGray">#D3D3D3</color>
+    <color name="colorGrayLight">#F0F0F0</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorBlackLight">#656565</color>
+    <color name="colorBlackDarkLight">#555555</color>
+
+    <color name="colorYoutube">#B31217</color>
+    <color name="colorYoutubeLight">#E52d27</color>
+
+    <color name="colorVK">#4E729A</color>
+    <color name="colorVKLight">#DEE5EB</color>
+
+    <color name="colorTransparent">#80000000</color>
+</resources>

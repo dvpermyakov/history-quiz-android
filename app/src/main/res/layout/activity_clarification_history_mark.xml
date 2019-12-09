@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <include layout="@layout/toolbar"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:id="@+id/openedLinearLayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/textViewMarkInfoDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_marginTop="@dimen/paragraph_title_padding_top"
+            android:layout_marginBottom="@dimen/paragraph_text_padding_bottom"
+            android:layout_marginLeft="@dimen/paragraph_padding_v"
+            android:layout_marginRight="@dimen/paragraph_padding_v"
+            android:textSize="@dimen/text_middle"
+            android:textColorLink="@color/colorPrimary"
+            android:linksClickable="true"
+            android:textColor="@color/colorBlackLight"/>
+
+        <include layout="@layout/progress_bar_loading"/>
+    </RelativeLayout>
+</LinearLayout>

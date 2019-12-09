@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/conditionsTextView"
+            android:visibility="gone"
+            android:text="@string/test_conditions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/test_starting_title_padding_left"
+            android:layout_marginTop="@dimen/test_starting_title_padding_top"
+            android:layout_marginBottom="@dimen/test_starting_title_padding_bottom"
+            android:textSize="@dimen/text_large"
+            android:textColor="@color/colorBlack" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/conditionsCardView"
+            android:visibility="gone"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/cardview_margin"
+            android:layout_marginRight="@dimen/cardview_margin"
+            card_view:cardCornerRadius="@dimen/cardview_radius"
+            android:elevation="@dimen/cardview_elevation"
+            card_view:cardBackgroundColor="@color/colorCardViewBackground" >
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewConditions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:text="@string/test_user_statistics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/test_starting_title_padding_left"
+            android:layout_marginTop="@dimen/test_starting_title_padding_top"
+            android:layout_marginBottom="@dimen/test_starting_title_padding_bottom"
+            android:textSize="@dimen/text_large"
+            android:textColor="@color/colorBlack" />
+
+        <androidx.cardview.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/cardview_margin"
+            android:layout_marginRight="@dimen/cardview_margin"
+            card_view:cardCornerRadius="@dimen/cardview_radius"
+            android:elevation="@dimen/cardview_elevation"
+            card_view:cardBackgroundColor="@color/colorCardViewBackground" >
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewUserStatistics"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:text="@string/test_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/test_starting_title_padding_left"
+            android:layout_marginTop="@dimen/test_starting_title_padding_top"
+            android:layout_marginBottom="@dimen/test_starting_title_padding_bottom"
+            android:textSize="@dimen/text_large"
+            android:textColor="@color/colorBlack" />
+
+        <androidx.cardview.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/cardview_margin"
+            android:layout_marginRight="@dimen/cardview_margin"
+            card_view:cardCornerRadius="@dimen/cardview_radius"
+            android:elevation="@dimen/cardview_elevation"
+            card_view:cardBackgroundColor="@color/colorCardViewBackground" >
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewTestInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/button_layout_margin_v"
+            android:layout_marginLeft="@dimen/button_layout_margin_h"
+            android:layout_marginBottom="@dimen/button_layout_margin_v"
+            android:layout_marginRight="@dimen/button_layout_margin_h">
+
+            <Button
+                android:id="@+id/rulesButton"
+                android:text="@string/button_rules_test"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/button_padding_h"
+                android:paddingRight="@dimen/button_padding_h"
+                android:paddingTop="@dimen/button_padding_v"
+                android:paddingBottom="@dimen/button_padding_v"
+                android:textSize="@dimen/text_middle"
+                android:textColor="@color/colorBlackLight"
+                android:theme="@style/SecondButton" />
+
+            <Button
+                android:id="@+id/startTestButton"
+                android:text="@string/button_start_test"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:paddingLeft="@dimen/button_padding_h"
+                android:paddingRight="@dimen/button_padding_h"
+                android:paddingTop="@dimen/button_padding_v"
+                android:paddingBottom="@dimen/button_padding_v"
+                android:textSize="@dimen/text_middle"
+                android:textColor="@color/colorWhite"
+                android:theme="@style/PrimaryButton"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

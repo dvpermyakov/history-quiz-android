@@ -1,0 +1,123 @@
+<resources>
+    <dimen name="header_instruction_height">75dp</dimen>
+    <dimen name="header_instruction_padding">10dp</dimen>
+    <dimen name="instruction_margin">0dp</dimen>
+    <dimen name="instruction_margin_top">-10dp</dimen>
+    <dimen name="instruction_margin_bottom">10dp</dimen>
+    <dimen name="indicator_padding">15dp</dimen>
+
+    <dimen name="menu_appbar_coins_padding">15dp</dimen>
+
+    <dimen name="done_instruction_icon_size">150dp</dimen>
+    <dimen name="done_instruction_icon_margin">20dp</dimen>
+    <dimen name="done_instruction_padding">20dp</dimen>
+    <dimen name="button_done_instruction_padding">20dp</dimen>
+    <dimen name="button_done_instruction_margin_h">30dp</dimen>
+    <dimen name="button_done_instruction_margin_v">40dp</dimen>
+
+    <dimen name="button_about_padding">10dp</dimen>
+    <dimen name="button_about_margin_h">5dp</dimen>
+    <dimen name="button_about_margin_v">10dp</dimen>
+
+    <dimen name="button_enter_padding">10dp</dimen>
+    <dimen name="button_enter_margin_h">20dp</dimen>
+    <dimen name="button_enter_margin_v">10dp</dimen>
+
+    <dimen name="button_read_padding">10dp</dimen>
+    <dimen name="button_read_margin_h">30dp</dimen>
+    <dimen name="button_read_margin_v">10dp</dimen>
+
+    <dimen name="cardview_radius">6dp</dimen>
+    <dimen name="cardview_elevation">12dp</dimen>
+    <dimen name="cardview_margin">10dp</dimen>
+    <dimen name="cardview_margin_with_text">5dp</dimen>
+
+    <dimen name="button_layout_margin_h">30dp</dimen>
+    <dimen name="button_layout_margin_v">10dp</dimen>
+    <dimen name="button_padding_h">30dp</dimen>
+    <dimen name="button_padding_v">10dp</dimen>
+
+    <dimen name="button_test_end_layout_margin_h">10dp</dimen>
+    <dimen name="button_test_end_layout_margin_v">10dp</dimen>
+    <dimen name="button_test_end_padding_h">20dp</dimen>
+    <dimen name="button_test_end_padding_v">10dp</dimen>
+
+    <dimen name="button_balance_layout_margin_h">10dp</dimen>
+    <dimen name="button_balance_layout_margin_v">10dp</dimen>
+    <dimen name="button_balance_padding_h">15dp</dimen>
+    <dimen name="button_balance_padding_v">10dp</dimen>
+
+    <dimen name="button_dialog_layout_margin_h">10dp</dimen>
+    <dimen name="button_dialog_layout_margin_v">10dp</dimen>
+    <dimen name="button_dialog_padding_h">10dp</dimen>
+    <dimen name="button_dialog_padding_v">10dp</dimen>
+
+    <dimen name="balance_title_padding_between">3dp</dimen>
+
+    <dimen name="text_instruction_header">22sp</dimen>
+    <dimen name="text_extra_large">20sp</dimen>
+    <dimen name="text_large">18sp</dimen>
+    <dimen name="text_middle">16sp</dimen>
+    <dimen name="text_small">14sp</dimen>
+    <dimen name="text_extra_small">12sp</dimen>
+
+    <dimen name="decoration_normal_padding">10dp</dimen>
+    <dimen name="decoration_answer_padding">0dp</dimen>
+
+    <dimen name="cv_history_period_height">250dp</dimen>
+    <dimen name="cv_history_period_image_height">200dp</dimen>
+    <dimen name="cv_history_period_height_icon">30dp</dimen>
+    <dimen name="cv_history_period_title_margin_horizontal">15dp</dimen>
+    <dimen name="cv_history_period_title_margin_vertical">5dp</dimen>
+
+    <dimen name="cv_history_mark_height">100dp</dimen>
+    <dimen name="cv_history_mark_height_icon">70dp</dimen>
+    <dimen name="cv_history_mark_text_padding_left">10dp</dimen>
+    <dimen name="cv_history_mark_text_padding_right">2dp</dimen>
+    <dimen name="cv_history_mark_text_padding_v">2dp</dimen>
+
+    <dimen name="cv_information_padding_h">20dp</dimen>
+    <dimen name="cv_information_padding_v">10dp</dimen>
+    <dimen name="cv_information_icon_size">30dp</dimen>
+
+    <dimen name="paragraph_padding_v">15dp</dimen>
+    <dimen name="paragraph_title_padding_top">10dp</dimen>
+    <dimen name="paragraph_text_padding_top">5dp</dimen>
+    <dimen name="paragraph_text_padding_bottom">10dp</dimen>
+
+    <dimen name="date_title_padding_left">20dp</dimen>
+    <dimen name="date_title_padding_top">10dp</dimen>
+
+    <dimen name="no_opened_marks_padding">20dp</dimen>
+
+    <dimen name="below_balance_buttons">5dp</dimen>
+
+    <dimen name="youtube_margin_bottom">10dp</dimen>
+
+    <dimen name="test_starting_title_padding_left">20dp</dimen>
+    <dimen name="test_starting_title_padding_top">10dp</dimen>
+    <dimen name="test_starting_title_padding_bottom">5dp</dimen>
+
+    <dimen name="test_question_margin">10dp</dimen>
+    <dimen name="test_answer_padding">20dp</dimen>
+    <dimen name="test_answer_card_margin_h">20dp</dimen>
+    <dimen name="test_answer_card_margin_v">10dp</dimen>
+    <dimen name="test_icon_padding">20dp</dimen>
+    <dimen name="test_icon_text_padding">10dp</dimen>
+    <dimen name="test_progress_bar_margin_v">-6dp</dimen>
+
+    <dimen name="test_ending_main_title_padding_top">20dp</dimen>
+    <dimen name="test_ending_main_title_padding_bottom">5dp</dimen>
+    <dimen name="test_ending_main_title_padding_h">5dp</dimen>
+    <dimen name="test_ending_main_title_padding_between">5dp</dimen>
+
+    <dimen name="test_ending_title_padding_left">20dp</dimen>
+    <dimen name="test_ending_title_padding_top">10dp</dimen>
+    <dimen name="test_ending_title_padding_bottom">5dp</dimen>
+    <dimen name="test_ending_icon_text_padding">0dp</dimen>
+
+    <dimen name="rating_title_padding_top">6dp</dimen>
+    <dimen name="rating_title_padding_bottom">1dp</dimen>
+
+    <dimen name="activity_horizontal_margin">64dp</dimen>
+</resources>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/personCardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="@dimen/cardview_margin"
+    android:layout_marginRight="@dimen/cardview_margin"
+    android:layout_marginTop="@dimen/cardview_margin"
+    android:focusable="true"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    card_view:cardCornerRadius="@dimen/cardview_radius"
+    android:elevation="@dimen/cardview_elevation"
+    card_view:cardBackgroundColor="@color/colorCardViewBackground" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/personImageContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/personImage"
+                android:layout_width="@dimen/cv_history_mark_height"
+                android:layout_height="@dimen/cv_history_mark_height"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:id="@+id/personImageIcon"
+                android:layout_width="@dimen/cv_history_mark_height_icon"
+                android:layout_height="@dimen/cv_history_mark_height_icon"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/personImageContainer"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/cv_history_mark_text_padding_left"
+            android:layout_marginRight="@dimen/cv_history_mark_text_padding_right"
+            android:layout_marginTop="@dimen/cv_history_mark_text_padding_v"
+            android:layout_marginBottom="@dimen/cv_history_mark_text_padding_v">
+
+            <TextView
+                android:id="@+id/personName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_middle"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/personYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_extra_small" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewDignities"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

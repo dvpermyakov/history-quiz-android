@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="dvpermyakov.historyquiz">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".application.MainApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ic_launcher_petr"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activities.InstructionsActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.HistoryPeriodsActivity"
+            android:label="@string/title_history_periods"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.ClarificationHistoryMarkActivity"
+            android:label="@string/title_opened_mark">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="@string/opened_scheme" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.HistoryMarkActivity"
+            android:label="@string/title_history_mark" />
+        <activity
+            android:name=".activities.TestGameActivity"
+            android:label="@string/title_test" />
+        <activity
+            android:name=".activities.FilteredHistoryMarksActivity"
+            android:label="@string/title_filtered_history_marks" />
+        <activity
+            android:name=".activities.BalanceActivity"
+            android:label="@string/title_balance" />
+        <activity
+            android:name=".activities.AboutActivity"
+            android:label="@string/title_about" />
+        <activity
+            android:name=".activities.VKLoginActivity"
+            android:label="@string/title_vk_login" />
+        <activity
+            android:name=".activities.FullScreenImageActivity"
+            android:label="@string/title_fullscreen"
+            android:theme="@style/AppTheme.TransparentStatusBar" />
+        <activity
+            android:name=".activities.GoogleLoginActivity"
+            android:label="@string/title_google_login" />
+        <activity
+            android:name=".activities.UserInfoFormActivity"
+            android:label="@string/title_user_info_form" />
+        <activity
+            android:name=".activities.RatingActivity"
+            android:label="@string/title_rating" />
+        <activity
+            android:name=".activities.PlayServiceGameLoginActivity"
+            android:label="@string/title_play_login" />
+        <activity
+            android:name=".activities.VideoInfoActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_video_info" />
+        <activity
+            android:name="com.vk.sdk.VKServiceActivity"
+            android:label="ServiceActivity"
+            android:theme="@style/VK.Transparent" />
+
+        <service
+            android:name=".services.UpdateUserInfoService"
+            android:exported="false" />
+        <service
+            android:name=".services.FileService"
+            android:exported="false" />
+        <service android:name=".services.FCMMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="io.branch.referral.InstallListener"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="7aa264d24e25072b408a02d1374f2ed04cc0e0dd" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@mipmap/ic_launcher" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+        <meta-data
+            android:name="io.branch.sdk.BranchKey"
+            android:value="key_live_jlvmLrz7WVgxCfkPOTYpjckoFBcN1XDR" />
+        <meta-data
+            android:name="com.google.android.gms.games.APP_ID"
+            android:value="@string/play_service_game_app_id" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>

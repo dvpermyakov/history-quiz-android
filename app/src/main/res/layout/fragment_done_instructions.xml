@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="@string/header_instruction_done"
+        android:id="@+id/instructionHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/header_instruction_height"
+        android:padding="@dimen/header_instruction_padding"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/text_instruction_header" />
+
+    <include layout="@layout/divider"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="70"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/doneInstructionIcon"
+                android:src="@drawable/ic_check_circle_large"
+                android:layout_width="@dimen/done_instruction_icon_size"
+                android:layout_height="@dimen/done_instruction_icon_size"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:text="@string/text_instruction_done"
+                android:id="@+id/instructionsDoneTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/done_instruction_padding"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_large" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="30">
+
+            <Button
+                android:id="@+id/doneInstructionButton"
+                android:text="@string/button_instruction_done"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:padding="@dimen/button_done_instruction_padding"
+                android:layout_marginLeft="@dimen/button_done_instruction_margin_h"
+                android:layout_marginRight="@dimen/button_done_instruction_margin_h"
+                android:layout_marginBottom="@dimen/button_done_instruction_margin_v"
+                android:textSize="@dimen/text_middle"
+                android:textColor="@color/colorWhite"
+                android:theme="@style/PrimaryButton" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

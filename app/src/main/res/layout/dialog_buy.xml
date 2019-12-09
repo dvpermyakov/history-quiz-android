@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/coinsBalanceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/text_middle"
+            android:textColor="@color/colorBlack"/>
+
+        <ImageView
+            android:id="@+id/balanceBuyImageView"
+            android:src="@mipmap/ic_coins"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="3dp"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/okButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/button_dialog_padding_h"
+            android:paddingRight="@dimen/button_dialog_padding_h"
+            android:paddingTop="@dimen/button_dialog_padding_v"
+            android:paddingBottom="@dimen/button_dialog_padding_v"
+            android:layout_marginLeft="@dimen/button_dialog_layout_margin_h"
+            android:layout_marginRight="@dimen/button_dialog_layout_margin_h"
+            android:layout_marginTop="@dimen/button_dialog_layout_margin_v"
+            android:layout_marginBottom="@dimen/button_dialog_layout_margin_v"
+            android:textColor="@color/colorPrimaryDark"
+            android:theme="@style/DialogButton"
+            style="@style/Widget.AppCompat.Button.Borderless"/>
+
+        <Button
+            android:id="@+id/buyButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="@dimen/button_dialog_padding_h"
+            android:paddingRight="@dimen/button_dialog_padding_h"
+            android:paddingTop="@dimen/button_dialog_padding_v"
+            android:paddingBottom="@dimen/button_dialog_padding_v"
+            android:layout_marginLeft="@dimen/button_dialog_layout_margin_h"
+            android:layout_marginRight="@dimen/button_dialog_layout_margin_h"
+            android:layout_marginTop="@dimen/button_dialog_layout_margin_v"
+            android:layout_marginBottom="@dimen/button_dialog_layout_margin_v"
+            android:textColor="@color/colorPrimaryDark"
+            android:theme="@style/DialogButton"
+            style="@style/Widget.AppCompat.Button.Borderless"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">История автомобиля: Игра</string>
+    <string name="title_history_periods">История автомобиля: Игра</string>
+
+    <string name="opened_scheme">app.opened.auto</string>
+</resources>

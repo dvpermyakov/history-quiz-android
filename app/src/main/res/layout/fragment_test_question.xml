@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="40">
+
+        <TextView
+            android:id="@+id/questionTextTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_margin="@dimen/test_question_margin"
+            android:textSize="@dimen/text_middle"
+            android:textColor="@color/colorBlack"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="60">
+
+        <androidx.cardview.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/answersCardView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/test_answer_card_margin_h"
+            android:layout_marginRight="@dimen/test_answer_card_margin_h"
+            android:layout_marginTop="@dimen/test_answer_card_margin_v"
+            android:layout_marginBottom="@dimen/test_answer_card_margin_v"
+            card_view:cardCornerRadius="@dimen/cardview_radius"
+            android:elevation="@dimen/cardview_elevation" >
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewAnswers"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+</LinearLayout>

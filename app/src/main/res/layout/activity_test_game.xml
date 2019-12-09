@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.TestGameActivity">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/testGameAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <include layout="@layout/toolbar"/>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <ProgressBar
+            android:id="@+id/questionAmountProgressBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/testGameAppBar"
+            android:layout_marginTop="@dimen/test_progress_bar_margin_v"
+            android:layout_marginBottom="@dimen/test_progress_bar_margin_v"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+
+        <RelativeLayout
+            android:id="@+id/questionContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/questionAmountProgressBar"
+            android:layout_above="@+id/testElementsContainer">
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/testElementsContainer"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/questionAmountTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_large"
+                android:padding="@dimen/test_icon_padding"
+                android:textColor="@color/colorBlackLight"/>
+
+            <TextView
+                android:id="@+id/timerTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textSize="@dimen/text_large"
+                android:padding="@dimen/test_icon_padding"
+                android:textColor="@color/colorBlackLight"/>
+
+            <TextView
+                android:id="@+id/mistakeRestAmountTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:layout_alignParentRight="true"
+                android:textSize="@dimen/text_large"
+                android:padding="@dimen/test_icon_padding"
+                android:textColor="@color/colorBlackLight"/>
+
+            <ProgressBar
+                android:id="@+id/timerProgressBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/test_progress_bar_margin_v"
+                android:layout_marginBottom="@dimen/test_progress_bar_margin_v"
+                android:layout_alignBottom="@+id/mistakeRestAmountTextView"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/progress_bar_loading"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

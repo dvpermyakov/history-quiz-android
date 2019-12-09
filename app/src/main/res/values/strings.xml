@@ -1,0 +1,284 @@
+<resources>
+    <string name="ad_app_id">ca-app-pub-9054310656708694~9713123562</string>
+    <string name="ad_balance_interstitial_id">ca-app-pub-9054310656708694/5363649162</string>
+
+    <string name="ad_colony_app_id">appb44d182fa4c64723ad</string>
+    <string name="ad_colony_zone_id">vz317f772e118d4e19a7</string>
+
+    <string name="youtube_api_key">AIzaSyCj9g2laA8rrTSOPBnDzKL3kYgM4vDpPcE</string>
+
+    <integer name="com_vk_sdk_AppId">5674042</integer>
+
+    <string name="play_service_game_app_id">618155383633</string>
+
+    <string name="button_read">Прочитал(а)</string>
+    <string name="button_read_done">Прочитано</string>
+
+    <string name="button_instructions">Пошаговая инструкция</string>
+    <string name="button_video">Обучающее видео</string>
+    <string name="button_mail">Написать нам</string>
+    <string name="button_vk">Группа Вконтакте</string>
+
+    <string name="button_go_to_youtube">Смотреть на YouTube</string>
+
+    <string name="login_with">Войти с помощью:</string>
+    <string name="vk">Вконтакте</string>
+    <string name="play_game">Play</string>
+    <string name="google">Google</string>
+    <string name="mail">Почта</string>
+
+    <string name="appbar_header_test">"Завершено тестов: "</string>
+    <string name="appbar_header_balance">"Баланс монет: "</string>
+
+    <string name="button_enter">Войти</string>
+    <string name="message_enter">Для того чтобы принять участие в рейтинге и увидеть топ пользователей приложения, Вам необходимо авторизоваться. Рейтинг составляется на основе количества завершенных тестов.</string>
+
+    <string name="button_enter_vk">Вконтакте</string>
+
+    <string name="button_share">Поделиться</string>
+
+    <string name="instruction_next">Далее</string>
+
+    <string name="loading">Загрузка…</string>
+
+    <string name="header_instruction_done">Приступить к игре</string>
+    <string name="text_instruction_done">Спасибо, что прошли инструкцию по использованию приложения!</string>
+    <string name="button_instruction_done">Приступить к игре</string>
+
+    <string name="title_history_periods">Периоды</string>
+    <string name="title_history_mark">Статья</string>
+    <string name="title_opened_mark">Пояснение</string>
+    <string name="title_test">Тестирование</string>
+    <string name="title_filtered_history_marks">Статьи</string>
+    <string name="title_balance">Монеты</string>
+    <string name="title_about">Как пользоваться?</string>
+    <string name="title_vk_login">Vk login</string>
+    <string name="title_google_login">Войти через Google аккаунт</string>
+    <string name="title_user_info_form">Мои данные</string>
+    <string name="title_rating">Рейтинг</string>
+    <string name="title_play_login">Войти через Play игры</string>
+    <string name="title_fullscreen">Fullscreen Image</string>
+    <string name="title_video_info">Информация о видео</string>
+
+    <string name="drawer_open">Открыть</string>
+    <string name="drawer_close">Закрыть</string>
+
+    <string name="dialog_not_network_title">Нет подключения к интернету</string>
+    <string name="dialog_not_network_text">Повторить?</string>
+    <string name="dialog_not_network_yes">ДА</string>
+    <string name="dialog_not_network_no">НЕТ</string>
+
+    <string name="dialog_not_login_title">Нет удалось войти…</string>
+    <string name="dialog_not_login_text">К сожалению, не удалось войти с помощью вашего аккаунта Google. Попробуйте позже.</string>
+    <string name="dialog_not_login_yes">Ок</string>
+
+    <string name="dialog_copyright_title">Авторство видеоконтента</string>
+    <string name="dialog_copyright_text">Разработчики приложения не являются авторами или создателями представленного видеоконтента. По всем вопросам относительно содержания Вы можете обратиться напрямую к авторам. Вы также можете сообщить нам любым удобным вам способом о любых нарушениях в приложении. Приятного просмотра!</string>
+    <string name="dialog_copyright_yes">Продолжить</string>
+    <string name="dialog_copyright_no">Сообщить</string>
+
+    <string name="dialog_share_advice_title">Поделиться прохождением теста?</string>
+    <string name="dialog_share_advice_text">Вы можете поделиться успешным прохождением теста через социальную сеть Вконтакте. Так Вы сможете получить дополнительные монеты.</string>
+    <string name="dialog_share_advice_yes">Поделиться</string>
+    <string name="dialog_share_advice_no">Назад</string>
+
+    <string name="dialog_start_test_title">Перейти к  тестированию?</string>
+    <string name="dialog_start_test_text">Все необходимые условия, чтобы начать тест, выполнены. Вы можете сразу перейти к тестированию! Также вам всегда доступна вкладка для прохождения тестирования сверху в правой части этого экрана.</string>
+    <string name="dialog_start_test_short_text">Вы можете пройти тестирование по просмотренному материалу! Приступить?</string>
+    <string name="dialog_start_test_yes">Да</string>
+    <string name="dialog_start_test_no">Нет</string>
+
+    <string name="dialog_start_other_title">Перейти к другой статье?</string>
+    <string name="dialog_start_other_text">Чтобы начать тестировании этой статьи, необходимо сначала завершить тест статьи &quot;123&quot;. Перейти к этой статье?</string>
+    <string name="dialog_start_other_yes">Да</string>
+    <string name="dialog_start_other_no">Нет</string>
+
+    <string name="dialog_vk_group_invite_title">Вступить в группу вконтакте?</string>
+    <string name="dialog_vk_group_invite_text">Вступив в нашу группу вконтакте, Вы сможете узнавать первыми о новых стаьях в приложении. Также Вы получите вознаграждение в виде монеток!</string>
+    <string name="dialog_vk_group_invite_text_opt">Вступив в нашу группу вконтакте, Вы сможете узнавать первыми о новых стаьях в приложении.</string>
+    <string name="dialog_vk_group_invite_yes">Вступить</string>
+    <string name="dialog_vk_group_invite_no">Отмена</string>
+    <string name="dialog_vk_group_invite_no_opt">Позже</string>
+
+    <string name="dialog_balance_rate_title">Как Вам наше приложение?</string>
+    <string name="dialog_balance_rate_text">Расскажите, что Вы думаете о нашем приложении: поставьте ему оценку или напишете отзыв! Любые Ваши пожелания только приветствуются! В любом случае Вам будет начислены дополнительные монетки!</string>
+    <string name="dialog_balance_rate_yes">Оценить</string>
+    <string name="dialog_balance_rate_later">Позже</string>
+
+    <string name="dialog_ad_fail_title">Неудача</string>
+    <string name="dialog_ad_fail_text">Не получилось загрузить рекламный контент.</string>
+    <string name="dialog_ad_fail_yes">Ок</string>
+
+    <string name="dialog_balance_first_title">Монеты</string>
+    <string name="dialog_balance_first_text">Для более интересного освоения истории в приложении есть монеты. С помощью них вы сможете открывать интересные вам статьи и проходить любые тесты. Однако мы советуем изучать историю шаг за шагом. Таким образом, за каждую статью, открытую по ссылке, или пройденный тест вам будут назначаться монеты. Кроме того, есть еще ежедневный бонус!</string>
+    <string name="dialog_balance_ok">Получить:</string>
+
+    <string name="dialog_referral_title">Награда за друга!</string>
+    <string name="dialog_referral_text">Ваш друг установил приложение по Вашей ссылке! За это Вам полагается награда!</string>
+    <string name="dialog_referral_ok">Получить:</string>
+
+    <string name="dialog_daily_reward_title">Ежедневный бонус!</string>
+    <string name="dialog_daily_reward_text">Заходите изучать историю каждый день, вам будут начисляться дополнительные монеты.</string>
+    <string name="dialog_daily_reward_ok">Получить:</string>
+
+    <string name="dialog_push_reward_title">Переход по пушу!</string>
+    <string name="dialog_push_reward_text">Рады видеть Вас снова в приложение! Дарим Вам дополнительные монеты.</string>
+    <string name="dialog_push_reward_ok">Получить:</string>
+
+    <string name="dialog_done_test_reward_title">Награда за прохождение теста!</string>
+    <string name="dialog_done_test_reward_text">Поздравляем! Вы успешно прошли тестирование, и за это Вам полагаются монетки. За каждый новый пройденный тест Вам будут начисляться монеты.</string>
+    <string name="dialog_done_test_reward_ok">Получить:</string>
+
+    <string name="dialog_open_reward_title">Награда за открытие статьи по ссылке!</string>
+    <string name="dialog_open_reward_text">Поздравляем! Вы открыли новую статью! За каждую статью, открытую по ссылке, Вы будете получать монетки.</string>
+    <string name="dialog_open_reward_ok">Получить:</string>
+
+    <string name="dialog_share_title">Награда за помощь проекту!</string>
+    <string name="dialog_share_text">Поздравляем! Вы поделились с друзьями, что успешно прошли тест! Запись была опубликована на Вашей стене в социальной сети ВКонтакте. За каждого друга, кто установит приложение по Вашей ссылке, Вы будете получать дополнительные 200 монет!</string>
+
+    <string name="dialog_share_already_title">Запись уже опубликована</string>
+    <string name="dialog_share_already_message">Вы уже поделились этой записью ранее. Вы можете пройти новый тест и поделиться новым результатом!</string>
+    <string name="dialog_share_already_ok">Ок</string>
+
+    <string name="dialog_share_fail_title">Запись не была опубликована</string>
+    <string name="dialog_share_fail_message">К сожалению, не удалось поделиться Вашим успешным прохождением теста с друзьями. Попробуйте, пожалуйста, еще раз.</string>
+    <string name="dialog_share_fail_ok">Ок</string>
+
+    <string name="dialog_not_questions_title">Невозможно запустить тест</string>
+    <string name="dialog_not_questions_text">К сожалению, в этом тесте нет вопросов, поэтому его невозможно запустить или пройти.</string>
+    <string name="dialog_not_questions_ok">OK</string>
+
+    <string name="dialog_developing_title">В разработке…</string>
+    <string name="dialog_developing_text">К сожалению, данный период истории находится в разработке. Для него пишутся статьи и тесты. В скором времени он будет открыт. Но вы можете помочь проекту: поставьте оценку нашему приложению.</string>
+    <string name="dialog_developing_ok">Оценить приложение</string>
+
+    <string name="dialog_rate_title">Необходимо Ваше мнение!</string>
+    <string name="dialog_rate_text">Если Вам понравилось наше приложение, то мы будем очень признательны, если Вы поставите нам оценку. Вы также можете написать отзыв: расскажите, что бы Вы хотели изменить или добавить. Мы обязательно учтем все Ваши пожелания! Только вместе мы сможем сделать приложение интересным и полезным для всех!</string>
+    <string name="dialog_rate_ok">Оценить</string>
+    <string name="dialog_rate_later">Позже</string>
+    <string name="dialog_rate_forbid">Не показывать</string>
+
+    <string name="dialog_continue_test_title">Продолжить тест?</string>
+    <string name="dialog_continue_test_text">Вы можете продолжить тест с места, где он был прерван. Вам будет дана дополнительная жизнь или дополнительное время.</string>
+    <string name="dialog_continue_test_ok">Вернуться</string>
+    <string name="dialog_continue_test_buy">Потратить:</string>
+
+    <string name="dialog_how_to_open_title">Как открыть статью?</string>
+    <string name="dialog_how_to_open_text">Для того чтобы открывать статьи, вам необходимо находить ссылки на эти статьи в пункте &quot;Информация&quot;. Они напоминают ссылки в браузере, но при нажитии вы перейдете в окно приложения, и вам будет доступна новая статья. Также вы можете открыть статью, потратив монеты.</string>
+    <string name="dialog_ok">Вернуться</string>
+    <string name="dialog_buy">Потратить:</string>
+
+    <string name="dialog_conditions_title">Необходимо выполнить тесты других статей!</string>
+    <string name="dialog_conditions_text">Для того чтобы приступить к этому тесту, Вам необходимо завершить тесты других статей. Они указаны в самом верху этого экрана. Вы также можете начать тест, потратив монеты.</string>
+    <string name="dialog_conditions_ok">Вернуться</string>
+    <string name="dialog_conditions_buy">Потратить:</string>
+
+    <string name="dialog_rules_title">Правила</string>
+    <string name="dialog_rules_text">Для каждого вопроса в тестировании Вам будут представлены четыре варианта ответа, и только один из них будет правильный. После неверного ответа вам необходимо попытаться еще раз ответить на вопрос, пока не закончатся жизни, время или вы верно ответите на вопрос. Иногда, чтобы начать тестирование, необходимо завершить тесты других статей.</string>
+    <string name="dialog_rules_ok">OK</string>
+
+    <string name="dialog_test_title">Завершить тестирование?</string>
+    <string name="dialog_test_yes">ДА</string>
+    <string name="dialog_test_no">НЕТ</string>
+
+    <string name="dialog_open_new_mark">Открыта новая статья</string>
+
+    <string name="info">Информация</string>
+    <string name="videos">Видео</string>
+    <string name="player">Просмотр видео</string>
+    <string name="test">Тестирование</string>
+
+    <string name="play_youtube_video">Смотреть на youtube</string>
+
+    <string name="coins_buy_ways">Способы потратить монеты</string>
+    <string name="coins_get_ways">Способы получить монеты</string>
+    <string name="coins_history">История баланса</string>
+
+    <string name="coins_balance">"Баланс: "</string>
+
+    <string name="test_conditions">Необходимо выполнить тесты статей</string>
+    <string name="test_user_statistics">Личная статистика</string>
+    <string name="test_info">Информация о тестировании</string>
+
+    <string name="test_attempts">Количество попыток</string>
+    <string name="test_max_result">Лучший результат</string>
+
+    <string name="question_amount_test">Количество вопросов</string>
+    <string name="mistake_amount_test">Количество жизней</string>
+    <string name="time_amount_test">Количество секунд</string>
+
+    <string name="result">Результат</string>
+    <string name="video">Видео</string>
+
+    <string name="question_amount_test_result">Количество отвеченных вопросов</string>
+    <string name="mistake_amount_test_result">Количество ошибок</string>
+    <string name="time_amount_test_result">Количество времени</string>
+
+    <string name="test_ending_result_default">Что-то пошло не так</string>
+    <string name="test_ending_result_win">Тест пройден</string>
+    <string name="test_ending_result_time">Вышло время</string>
+    <string name="test_ending_result_mistakes">Исчерпан лимит ошибок</string>
+    <string name="test_ending_result_cancel">Вы вышли из тестирования</string>
+
+    <string name="video_info_source">Источник</string>
+    <string name="video_info_author">Автор</string>
+    <string name="video_info_duration">Продолжительность</string>
+
+    <string name="video_info_views">Количество просмотров</string>
+    <string name="video_info_likes">Количество лайков</string>
+    <string name="video_info_comments">Количество комментариев</string>
+
+    <string name="video_info_subscribers">Количество подписчиков</string>
+    <string name="video_info_videos">Количество видео</string>
+
+    <string name="button_start_test">Начать</string>
+    <string name="button_rules_test">Правила</string>
+    <string name="button_retry_test">Еще раз</string>
+    <string name="button_continue_test">Продолжить</string>
+
+    <string name="no_marks">Нет подходящих статей</string>
+
+    <string name="menu_navigation_periods">Периоды</string>
+    <string name="menu_navigation_new">Новые статьи</string>
+    <string name="menu_navigation_opened">Открытые статьи</string>
+    <string name="menu_navigation_done">Выполненные статьи</string>
+    <string name="menu_navigation_rating">Рейтинг</string>
+    <string name="menu_navigation_achievement">Достижения</string>
+    <string name="menu_navigation_balance">Монеты</string>
+    <string name="menu_navigation_instructions">Как пользоваться?</string>
+    <string name="menu_navigation_video">Обучающее видео</string>
+    <string name="menu_navigation_rate">Оценить</string>
+    <string name="menu_navigation_email">Написать нам</string>
+
+    <string name="menu_appbar_balance">Баланс</string>
+    <string name="menu_appbar_done">Сохранить</string>
+    <string name="menu_appbar_youtube_link">Перейти на YouTube</string>
+
+    <string name="get_way_start">Стартовый бонус</string>
+    <string name="get_way_day">Ежедневный бонус</string>
+    <string name="get_way_open_mark">Открыть статью по ссылке</string>
+    <string name="get_way_done_test">Выполнить тест статьи</string>
+    <string name="get_way_interstitial_ad">Реклама</string>
+    <string name="get_way_interstitial_video_ad">Видеоролик</string>
+    <string name="get_way_share_test_result">Поделиться</string>
+    <string name="get_way_read_mark">Прочитать статью</string>
+    <string name="get_way_push">Перейти по пушу</string>
+    <string name="get_referral">Пригласить друга</string>
+    <string name="get_vk_group">Вступить в группу</string>
+    <string name="get_rate">Оценить приложение</string>
+
+    <string name="buy_way_open_mark">Открыть любую статью</string>
+    <string name="buy_way_open_test">Начать недоступный тест</string>
+    <string name="buy_way_continue_test">Продолжить тест</string>
+
+    <string name="video_information">Информация о видео</string>
+    <string name="video_statistic">Статистика видео на Youtube</string>
+    <string name="author_statistic">Статистика автора на Youtube</string>
+    <string name="video_play_youtube">Перейти на Youtube</string>
+
+    <string name="email_via">Написать письмо с помощью…</string>
+
+    <string name="user_form_name">Ваше имя</string>
+    <string name="user_form_surname">Ваша фамилия</string>
+    <string name="user_form_email">Ваша почта</string>
+</resources>

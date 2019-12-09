@@ -1,0 +1,23 @@
+# Gradle files
+.gradle/
+
+# Generated files
+release/
+build/
+
+# Android Studio captures folder
+captures/
+
+# Local configuration file (sdk path, etc)
+/local.properties
+
+# External native build folder generated in Android Studio 2.2 and later
+.externalNativeBuild
+
+# IDE
+*.iml
+/.idea/*
+
+# OS generated files
+Thumbs.db
+.DS_Store

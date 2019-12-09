@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textViewParagraphHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/paragraph_title_padding_top"
+        android:layout_marginLeft="@dimen/paragraph_padding_v"
+        android:layout_marginRight="@dimen/paragraph_padding_v"
+        android:textSize="@dimen/text_large"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/paragraphImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="@dimen/paragraph_title_padding_top"
+        android:layout_marginLeft="@dimen/paragraph_padding_v"
+        android:layout_marginRight="@dimen/paragraph_padding_v" />
+
+    <TextView
+        android:id="@+id/textViewParagraphText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_marginTop="@dimen/paragraph_text_padding_top"
+        android:layout_marginBottom="@dimen/paragraph_text_padding_bottom"
+        android:layout_marginLeft="@dimen/paragraph_padding_v"
+        android:layout_marginRight="@dimen/paragraph_padding_v"
+        android:textSize="@dimen/text_middle"
+        android:textColorLink="@color/colorPrimary"
+        android:linksClickable="true"
+        android:textColor="@color/colorBlackLight"/>
+
+</LinearLayout>

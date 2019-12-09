@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical" />
+
+        <Button
+            android:id="@+id/readButton"
+            android:text="@string/button_read"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/button_read_padding"
+            android:layout_marginLeft="@dimen/button_read_margin_h"
+            android:layout_marginRight="@dimen/button_read_margin_h"
+            android:layout_marginBottom="@dimen/button_read_margin_v"
+            android:textSize="@dimen/text_middle"
+            android:textColor="@color/colorWhite"
+            android:theme="@style/PrimaryButton" />
+
+        <Button
+            android:id="@+id/readDoneButton"
+            android:visibility="gone"
+            android:text="@string/button_read_done"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/button_read_padding"
+            android:layout_marginLeft="@dimen/button_read_margin_h"
+            android:layout_marginRight="@dimen/button_read_margin_h"
+            android:layout_marginBottom="@dimen/button_read_margin_v"
+            android:textSize="@dimen/text_middle"
+            android:textColor="@color/colorWhite"
+            android:theme="@style/PrimaryDoneButton" />
+
+    </LinearLayout >
+</androidx.core.widget.NestedScrollView>

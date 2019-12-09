@@ -1,0 +1,55 @@
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/colorGrayLight</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+    <style name="AppTheme.TransparentStatusBar" parent="AppTheme" />
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="PrimaryButton" parent="Theme.AppCompat.Light">
+        <item name="colorButtonNormal">@color/colorPrimary</item>
+        <item name="colorControlHighlight">@color/colorPrimaryLight</item>
+    </style>
+
+    <style name="SecondButton" parent="Theme.AppCompat.Light">
+        <item name="colorButtonNormal">@color/colorWhite</item>
+        <item name="colorControlHighlight">@color/colorPrimaryLight</item>
+    </style>
+
+    <style name="PrimaryDoneButton" parent="Theme.AppCompat.Light">
+        <item name="colorButtonNormal">@color/colorBlackLight</item>
+        <item name="colorControlHighlight">@color/colorBlackLight</item>
+    </style>
+
+    <style name="YoutubeButton" parent="Theme.AppCompat.Light">
+        <item name="colorButtonNormal">@color/colorYoutube</item>
+        <item name="colorControlHighlight">@color/colorYoutubeLight</item>
+    </style>
+
+    <style name="VKButton" parent="Theme.AppCompat.Light">
+        <item name="colorButtonNormal">@color/colorVK</item>
+        <item name="colorControlHighlight">@color/colorVKLight</item>
+    </style>
+
+    <style name="DialogButton" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">@color/colorPrimaryLight</item>
+    </style>
+
+    <style name="Dialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+</resources>

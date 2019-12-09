@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="100">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="74">
+
+        <TextView
+            android:id="@+id/cvInfoTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="@dimen/cv_information_padding_h"
+            android:paddingTop="@dimen/cv_information_padding_v"
+            android:paddingBottom="@dimen/cv_information_padding_v"
+            android:textSize="@dimen/text_small"
+            android:textColor="@color/colorBlackLight" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="26">
+
+        <ImageView
+            android:id="@+id/cvIcon"
+            android:visibility="gone"
+            android:layout_width="@dimen/cv_information_icon_size"
+            android:layout_height="@dimen/cv_information_icon_size"
+            android:layout_marginRight="@dimen/cv_information_padding_v"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:id="@+id/cvInfoValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:paddingRight="@dimen/cv_information_padding_h"
+            android:paddingTop="@dimen/cv_information_padding_v"
+            android:paddingBottom="@dimen/cv_information_padding_v"
+            android:textSize="@dimen/text_small"
+            android:gravity="end"
+            android:textColor="@color/colorBlackLight"/>
+    </RelativeLayout>
+</LinearLayout>

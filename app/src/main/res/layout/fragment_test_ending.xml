@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="@dimen/test_ending_main_title_padding_top"
+                android:paddingBottom="@dimen/test_ending_main_title_padding_bottom"
+                android:paddingLeft="@dimen/test_ending_main_title_padding_h"
+                android:paddingRight="@dimen/test_ending_main_title_padding_h">
+
+                <ImageView
+                    android:id="@+id/resultIcon"
+                    android:layout_width="wrap_content"
+                    android:paddingRight="@dimen/test_ending_main_title_padding_between"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical" />
+
+                <TextView
+                    android:id="@+id/tvTestResult"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/text_large"
+                    android:textColor="@color/colorBlack"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:text="@string/result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/test_ending_title_padding_left"
+                android:layout_marginTop="@dimen/test_ending_title_padding_top"
+                android:layout_marginBottom="@dimen/test_ending_title_padding_bottom"
+                android:textSize="@dimen/text_large"
+                android:textColor="@color/colorBlack" />
+
+            <androidx.cardview.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/cardview_margin"
+                android:layout_marginRight="@dimen/cardview_margin"
+                card_view:cardCornerRadius="@dimen/cardview_radius"
+                android:elevation="@dimen/cardview_elevation"
+                card_view:cardBackgroundColor="@color/colorCardViewBackground" >
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewTestEndingInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+                </androidx.recyclerview.widget.RecyclerView>
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/button_test_end_layout_margin_v"
+                android:layout_marginLeft="@dimen/button_test_end_layout_margin_h"
+                android:layout_marginBottom="@dimen/button_test_end_layout_margin_v"
+                android:layout_marginRight="@dimen/button_test_end_layout_margin_h"
+                android:weightSum="100" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="60"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/continueButton"
+                        android:text="@string/button_continue_test"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:paddingLeft="@dimen/button_test_end_padding_h"
+                        android:paddingRight="@dimen/button_test_end_padding_h"
+                        android:paddingTop="@dimen/button_test_end_padding_v"
+                        android:paddingBottom="@dimen/button_test_end_padding_v"
+                        android:textSize="@dimen/text_small"
+                        android:textColor="@color/colorBlackLight"
+                        android:theme="@style/SecondButton" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="40"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" >
+
+                    <Button
+                        android:id="@+id/doneEndingStartButton"
+                        android:text="@string/button_retry_test"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/button_test_end_padding_h"
+                        android:paddingRight="@dimen/button_test_end_padding_h"
+                        android:paddingTop="@dimen/button_test_end_padding_v"
+                        android:paddingBottom="@dimen/button_test_end_padding_v"
+                        android:textSize="@dimen/text_small"
+                        android:textColor="@color/colorWhite"
+                        android:theme="@style/PrimaryButton"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/videoRecommendationLayout"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" >
+
+                <TextView
+                    android:text="@string/video"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="@dimen/test_ending_title_padding_left"
+                    android:textSize="@dimen/text_large"
+                    android:textColor="@color/colorBlack" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewVideosRecommendation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/cardview_margin"
+                    android:paddingTop="@dimen/cardview_margin"
+                    android:scrollbars="none"
+                    android:clipToPadding="false" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

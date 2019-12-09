@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/instructionHeader"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_instruction_height"
+        android:padding="@dimen/header_instruction_padding"
+        android:gravity="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/text_instruction_header" />
+
+    <LinearLayout
+        android:id="@+id/dividerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/instructionHeader">
+        <include layout="@layout/divider"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/instructionImage"
+        android:layout_below="@+id/dividerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/instruction_margin_top"
+        android:layout_marginBottom="@dimen/instruction_margin_bottom"
+        android:layout_margin="@dimen/instruction_margin" />
+
+</RelativeLayout>

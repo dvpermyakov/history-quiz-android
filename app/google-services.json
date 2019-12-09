@@ -1,0 +1,65 @@
+{
+  "project_info": {
+    "project_number": "522405415512",
+    "firebase_url": "https://history-quiz-app.firebaseio.com",
+    "project_id": "history-quiz-app",
+    "storage_bucket": "history-quiz-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:522405415512:android:983c5bf7d8985b3f",
+        "android_client_info": {
+          "package_name": "dvpermyakov.historyquiz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "522405415512-dgbh8ulehcefa64ccdjqmuju3hkh0ie5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "dvpermyakov.historyquiz",
+            "certificate_hash": "6D10833ABD8564C42558C45896785EE77C4FBCE0"
+          }
+        },
+        {
+          "client_id": "522405415512-g749cq8neddeovarv8i56ce8u64s1qia.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "dvpermyakov.historyquiz",
+            "certificate_hash": "1A6A0C1B7EF00A54DC573B0F2A2614DEE24BAB53"
+          }
+        },
+        {
+          "client_id": "522405415512-7o5o6hhfsu661479jo7rjin11mm5hc76.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "522405415512-kmib3d0pj44utaeb5ojsniu898mprdok.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAG5izIHzeqdCOoN_wICmru3vGmfAwG-iU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-84054661-1"
+          }
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
