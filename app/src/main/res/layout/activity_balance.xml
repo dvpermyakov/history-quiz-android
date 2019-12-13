@@ -106,21 +106,7 @@
                             android:layout_marginRight="@dimen/cardview_margin">
 
                             <Button
-                                android:id="@+id/interstitialButton"
-                                android:text="@string/get_way_interstitial_ad"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:paddingLeft="@dimen/button_balance_padding_h"
-                                android:paddingRight="@dimen/button_balance_padding_h"
-                                android:paddingTop="@dimen/button_balance_padding_v"
-                                android:paddingBottom="@dimen/button_balance_padding_v"
-                                android:textColor="@color/colorBlackLight"
-                                android:textSize="@dimen/text_extra_small"
-                                android:theme="@style/SecondButton" />
-
-                            <Button
-                                android:id="@+id/interstitialVideoButton"
-                                android:text="@string/get_way_interstitial_video_ad"
+                                android:id="@+id/vkButton"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:paddingLeft="@dimen/button_balance_padding_h"

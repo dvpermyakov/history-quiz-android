@@ -100,11 +100,6 @@
     <string name="dialog_vk_group_invite_no">Отмена</string>
     <string name="dialog_vk_group_invite_no_opt">Позже</string>
 
-    <string name="dialog_balance_rate_title">Как Вам наше приложение?</string>
-    <string name="dialog_balance_rate_text">Расскажите, что Вы думаете о нашем приложении: поставьте ему оценку или напишете отзыв! Любые Ваши пожелания только приветствуются! В любом случае Вам будет начислены дополнительные монетки!</string>
-    <string name="dialog_balance_rate_yes">Оценить</string>
-    <string name="dialog_balance_rate_later">Позже</string>
-
     <string name="dialog_ad_fail_title">Неудача</string>
     <string name="dialog_ad_fail_text">Не получилось загрузить рекламный контент.</string>
     <string name="dialog_ad_fail_yes">Ок</string>

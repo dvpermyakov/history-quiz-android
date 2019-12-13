@@ -6,27 +6,26 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
-import android.net.Uri;
 import android.os.Bundle;
-import com.google.android.material.navigation.NavigationView;
-import androidx.core.content.ContextCompat;
-import androidx.drawerlayout.widget.DrawerLayout;
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-import androidx.appcompat.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.google.android.material.navigation.NavigationView;
 import com.vk.sdk.api.model.VKScopes;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import dvpermyakov.historyquiz.ExternalConstants;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.core.content.ContextCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import dvpermyakov.historyquiz.R;
 import dvpermyakov.historyquiz.adapter_models.CardViewInformationModel;
 import dvpermyakov.historyquiz.adapters.CardViewInformationAdapter;
@@ -114,26 +113,7 @@ public class BalanceActivity extends AppCompatActivity {
                 (int) (drawable.getIntrinsicWidth() / 2.5),
                 (int) (drawable.getIntrinsicHeight() / 2.5));
 
-        interstitialButton = (Button)findViewById(R.id.interstitialButton);
-        if (interstitialButton != null) {
-            interstitialButton.setOnClickListener(adClickListener);
-            interstitialButton.setText(interstitialButton.getText() + "  +" + CoinsTransaction.CoinsTransactionCategory.INTERSTITIAL_AD.getValue());
-            interstitialButton.setCompoundDrawables(null, null, drawable, null);
-            interstitialButton.setCompoundDrawablePadding(3);
-
-            if (UserPreferences.getShowRateApp(this)) {
-                String title = "Оценить  +" + CoinsTransaction.CoinsTransactionCategory.RATE_REWARD.getValue();
-                interstitialButton.setText(title);
-                interstitialButton.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        showRateAppDialog();
-                    }
-                });
-            }
-        }
-
-        interstitialVideoButton = (Button)findViewById(R.id.interstitialVideoButton);
+        interstitialVideoButton = (Button) findViewById(R.id.vkButton);
         if (interstitialVideoButton != null) {
             interstitialVideoButton.setOnClickListener(videoClickListener);
             interstitialVideoButton.setText(interstitialVideoButton.getText() + "  +" + CoinsTransaction.CoinsTransactionCategory.INTERSTITIAL_VIDEO_AD.getValue());
@@ -243,6 +223,7 @@ public class BalanceActivity extends AppCompatActivity {
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
         if (resultCode == RESULT_OK) {
             boolean success = data.getBooleanExtra(IntentStrings.INTENT_LOGIN_VK_SUCCESS, false);
             if (success) {
@@ -255,20 +236,6 @@ public class BalanceActivity extends AppCompatActivity {
         }
     }
 
-    private void showAdFailDialog() {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this, R.style.Dialog);
-        builder.setTitle(getResources().getString(R.string.dialog_ad_fail_title));
-        builder.setMessage(getResources().getString(R.string.dialog_ad_fail_text));
-        builder.setPositiveButton(getString(R.string.dialog_ad_fail_yes),
-                new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        dialog.dismiss();
-                    }
-                });
-        builder.create().show();
-    }
-
     private void showInviteVkGroupDialog() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this, R.style.Dialog);
         builder.setTitle(getResources().getString(R.string.dialog_vk_group_invite_title));
@@ -277,7 +244,7 @@ public class BalanceActivity extends AppCompatActivity {
                 new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        String[] scopes = new String[] {VKScopes.GROUPS};
+                        String[] scopes = new String[]{VKScopes.GROUPS};
                         startActivityForResult(new Intent(context, VKLoginActivity.class)
                                 .putExtra(IntentStrings.INTENT_VK_SCOPE, scopes), 0);
                         dialog.dismiss();
@@ -293,48 +260,5 @@ public class BalanceActivity extends AppCompatActivity {
                     }
                 });
         builder.create().show();
-    }
-
-    private void showRateAppDialog() {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this, R.style.Dialog);
-        builder.setTitle(getResources().getString(R.string.dialog_balance_rate_title));
-        builder.setMessage(getResources().getString(R.string.dialog_balance_rate_text));
-        builder.setPositiveButton(getString(R.string.dialog_balance_rate_yes),
-                new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(ExternalConstants.ANDROID_MARKET_URL)));
-                        UserPreferences.setShowRateApp(context, false);
-                        setAward(CoinsTransaction.CoinsTransactionCategory.RATE_REWARD);
-                        String title = "Реклама  +" + CoinsTransaction.CoinsTransactionCategory.INTERSTITIAL_AD.getValue();
-                        interstitialButton.setText(title);
-                        interstitialButton.setOnClickListener(adClickListener);
-                        dialog.dismiss();
-                    }
-                });
-        builder.setNegativeButton(getString(R.string.dialog_balance_rate_later),
-                new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        UserPreferences.setShowRateApp(context, false);
-                        setAward(CoinsTransaction.CoinsTransactionCategory.RATE_REWARD);
-                        String title = "Реклама  +" + CoinsTransaction.CoinsTransactionCategory.INTERSTITIAL_AD.getValue();
-                        interstitialButton.setText(title);
-                        interstitialButton.setOnClickListener(adClickListener);
-                        dialog.dismiss();
-                    }
-                });
-        builder.create().show();
-    }
-
-    private void showLoadingDialog() {
-        dismissLoadingDialog();
-        progressDialog = ProgressDialog.show(this, "", getResources().getString(R.string.loading), true);
-    }
-
-    private void dismissLoadingDialog() {
-        if (progressDialog != null) {
-            progressDialog.dismiss();
-        }
     }
 }
