@@ -1,8 +1,8 @@
-apply plugin: 'com.android.application'
-apply plugin: 'io.fabric'
+apply plugin: "com.android.application"
+apply plugin: "io.fabric"
 
 repositories {
-    maven { url 'https://maven.fabric.io/public' }
+    maven { url "https://maven.fabric.io/public" }
 }
 
 android {
@@ -19,7 +19,7 @@ android {
     buildTypes {
         release {
             minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
         }
     }
     flavorDimensions "version"
@@ -38,25 +38,25 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'androidx.appcompat:appcompat:1.1.0'
-    implementation 'com.google.android.material:material:1.0.0'
-    implementation 'androidx.cardview:cardview:1.0.0'
-    implementation 'androidx.recyclerview:recyclerview:1.0.0'
-    implementation 'androidx.annotation:annotation:1.1.0'
-    implementation 'com.google.code.gson:gson:2.8.5'
-    implementation 'com.google.firebase:firebase-core:17.2.0'
-    implementation 'com.google.firebase:firebase-messaging:20.0.0'
-    implementation 'com.google.android.gms:play-services-analytics:17.0.0'
-    implementation 'com.google.android.gms:play-services-auth:17.0.0'
-    implementation 'com.google.android.gms:play-services-games:18.0.1'
-    implementation 'com.j256.ormlite:ormlite-android:4.47'
-    implementation 'com.nostra13.universalimageloader:universal-image-loader:1.9.2'
-    implementation 'com.mcxiaoke.volley:library:1.0.15'
-    implementation 'com.crashlytics.sdk.android:crashlytics:2.10.1'
-    implementation 'com.vk:androidsdk:1.6.9'
-    implementation 'io.branch.sdk.android:library:3+'
-    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation "androidx.appcompat:appcompat:1.1.0"
+    implementation "com.google.android.material:material:1.0.0"
+    implementation "androidx.cardview:cardview:1.0.0"
+    implementation "androidx.recyclerview:recyclerview:1.1.0"
+    implementation "androidx.annotation:annotation:1.1.0"
+    implementation "com.google.code.gson:gson:2.8.6"
+    implementation "com.google.firebase:firebase-core:17.2.1"
+    implementation "com.google.firebase:firebase-messaging:20.0.1"
+    implementation "com.google.android.gms:play-services-analytics:17.0.0"
+    implementation "com.google.android.gms:play-services-auth:17.0.0"
+    implementation "com.google.android.gms:play-services-games:19.0.0"
+    implementation "com.j256.ormlite:ormlite-android:4.47"
+    implementation "com.nostra13.universalimageloader:universal-image-loader:1.9.2"
+    implementation "com.mcxiaoke.volley:library:1.0.15"
+    implementation "com.crashlytics.sdk.android:crashlytics:2.10.1"
+    implementation "com.vk:androidsdk:1.6.9"
+    implementation "io.branch.sdk.android:library:3+"
+    implementation "androidx.multidex:multidex:2.0.1"
 }
 
-apply plugin: 'com.google.gms.google-services'
+apply plugin: "com.google.gms.google-services"
